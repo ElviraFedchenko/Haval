@@ -1,8 +1,8 @@
 .main-nav {
-color: $color-default-white;
+  color: $color-default-white;
+  background-color: $color-default-black;
 
   &__container {
-    background-color: $color-default-black;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -13,7 +13,16 @@ color: $color-default-white;
     flex-direction: row;
   }
 
+  &__inner {
+    display: flex;
+    justify-content: center;
+  }
+
   &__list {
     display: flex;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
 }
