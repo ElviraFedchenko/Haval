@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Тестовое задание для работодателя">
   <title>Haval</title>
-  <link rel="preload" href="./fonts/montserrat-v25-cyrillic_latin-300.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="./fonts/montserrat-v25-cyrillic_latin-regular.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="./fonts/montserrat-v25-cyrillic_latin-600.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/Haval-300.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/Haval-400.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/Haval-500.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -25,6 +25,9 @@
             </svg>
           </a>
           <div class="main-nav__phone">
+            <svg width="21" height="24">
+              <use xlink:href="img/sprite.svg#tel"></use>
+            </svg>
             <a class="main-nav__tel" href="tel:84957559990">+7&nbsp;495&nbsp;755&nbsp;99&nbsp;90</a>
           </div>
           <div class="main-nav__map">
@@ -84,28 +87,31 @@
     </header>
     <main>
       <section class="hero">
-        <div class="hero__wrapper">
-        <h2>Увеличиваем выгоды на HAVAL</h2>
-        <h3>в Химках к Чёрной пятнице!</h3>
-        <a class="hero__toggle button" href="#nowhere" aria-label="кнопка.">Зафиксировать условия</a>
+        <div class="hero__wrapper container">
+          <div class="hero__inner">
+            <h2>Увеличиваем выгоды на HAVAL</h2>
+            <h3>в Химках к Чёрной пятнице!</h3>
+          </div>
+          <a class="hero__toggle button" href="#nowhere" aria-label="кнопка.">Зафиксировать условия</a>
         </div>
         <div class="hero__image">
           <picture>
-            <source type="image/webp" media="(min-width: 1200px)"
-              srcset="img/hero@2x.webp 2x, img/hero.webp 1x" width="1920" height="756">
-            <img src="img/hero.jpg" srcset="img/hero@2x.jpg 2x" width="1920" height="756"
-              alt="Марки машин." loading="lazy">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/hero@2x.webp 2x, img/hero.webp 1x"
+              width="1920" height="756">
+            <img src="img/hero.jpg" srcset="img/hero@2x.jpg 2x" width="1920" height="756" alt="Марки машин."
+              loading="lazy">
           </picture>
         </div>
       </section>
-      <section class="timer">
+      <section class="timer container">
+        <h2 class="timer__title">Оставьте заявку и зафиксируйте условия</h2>
         <a class="timer__chat" href="#" aria-label="ссылка на чат.">
           <svg width="24" height="25">
             <use xlink:href="img/sprite.svg#chat"></use>
           </svg>
         </a>
         <script src="//megatimer.ru/get/97405ab412235ab7694c7d020090c8c5.js"></script>
-        <a class="timer button" href="#nowhere" aria-label="кнопка.">Зафиксировать условия</a>
+        <a class="timer__toggle button" href="#nowhere" aria-label="кнопка.">Зафиксировать условия</a>
       </section>
     </main>
     <footer>
