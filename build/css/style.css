@@ -601,6 +601,7 @@ button,
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 54px;
 }
 .main-nav__list {
   display: -webkit-box;
@@ -615,6 +616,17 @@ button,
   font-size: 10.66px;
   font-weight: 500;
   line-height: normal;
+}
+.main-nav__link:not(:last-child) {
+  padding-right: 14px;
+}
+.main-nav__map svg {
+  width: 17px;
+  height: 28px;
+}
+.main-nav__map svg__phone {
+  width: 21px;
+  height: 24px;
 }
 
 .hero {
@@ -633,7 +645,6 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 24px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   max-width: 1440px;
@@ -662,6 +673,7 @@ button,
   font-weight: 500;
   line-height: normal;
   margin: 0;
+  margin-bottom: 24px;
 }
 .hero__toggle {
   display: -webkit-box;
@@ -680,6 +692,49 @@ button,
       flex-shrink: 0;
   background-color: #00cabf;
   color: #ffffff;
+}
+
+.timer {
+  background-color: #f3f3f3;
+}
+.timer__title {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.timer__toggle {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 70px;
+  padding: 0 64px 0 74px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background-color: #00cabf;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.timer__chat {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  border: 1px solid #000001;
+  width: 56px;
+  height: 56px;
+  padding: 16px 16px 15px 16px;
+  background-color: #000000;
 }
 
 /* @mixin hover-focus {
