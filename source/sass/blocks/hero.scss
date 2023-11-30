@@ -20,7 +20,7 @@
   h2 {
     color: $color-default-white;
     text-align: center;
-    font-size: 25px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 500;
     line-height: 55px;
@@ -52,6 +52,7 @@
 
   &__image img {
     width: 100%;
-    height: 100%;
+    height: 756px;
+    object-fit: cover;
   }
 }
