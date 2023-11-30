@@ -1,6 +1,7 @@
 .main-nav {
   color: $color-default-white;
   background-color: $color-default-black;
+  padding: 0 calc(50% - 600px - 10px) 0 calc(50% - 600px);
 
   &__container {
     display: flex;
