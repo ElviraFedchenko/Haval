@@ -1,3 +1,19 @@
 .main-nav {
-  color: $color-default-black;
+color: $color-default-white;
+
+  &__container {
+    background-color: $color-default-black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__map {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__list {
+    display: flex;
+  }
 }
