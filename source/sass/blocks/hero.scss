@@ -1,0 +1,42 @@
+.hero {
+  position: relative;
+
+  &__wrapper {
+    position: absolute;
+    padding: 63px 390px 461px 390px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    flex-shrink: 0;
+  }
+
+  h2 {
+    color: $color-default-white;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 55px;
+  }
+
+  h3 {
+    color: #00cabf;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  &__toggle {
+    display: flex;
+    width: 374px;
+    height: 60px;
+    padding: 21px 23px 20px 22px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: #00cabf;
+    color: $color-default-white;
+  }
+}
