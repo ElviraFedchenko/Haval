@@ -18,6 +18,12 @@
     flex-direction: row;
   }
 
+  &__tel {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: normal;
+  }
+
   &__inner {
     display: flex;
     justify-content: center;
@@ -38,7 +44,7 @@
     line-height: normal;
   }
 
-  &__link:not(:last-child) {
+  &__item:not(:last-child) {
     padding-right: 14px;
   }
 
@@ -50,5 +56,13 @@
       width: 21px;
       height: 24px;
     }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
   }
 }
