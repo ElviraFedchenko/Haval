@@ -5,7 +5,11 @@
   &__container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    padding: 0 14px 0 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 97px;
+    flex-shrink: 0;
   }
 
   &__map {
@@ -16,6 +20,7 @@
   &__inner {
     display: flex;
     justify-content: center;
+    gap: 54px;
   }
 
   &__list {
@@ -24,5 +29,25 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+  }
+
+  &__link {
+    font-size: 10.66px;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  &__link:not(:last-child) {
+    padding-right: 14px;
+  }
+
+  &__map svg {
+    width: 17px;
+    height: 28px;
+
+    &__phone {
+      width: 21px;
+      height: 24px;
+    }
   }
 }
