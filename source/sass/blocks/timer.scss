@@ -2,7 +2,6 @@
   background-color: #f3f3f3;
 
   &__container {
-    padding: 0 calc(50% - 600px - 10px) 0 calc(50% - 600px);
     display: flex;
   }
 
@@ -12,6 +11,10 @@
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+    padding-top: 35px;
+
   }
 
   &__toggle {
@@ -28,16 +31,18 @@
     font-weight: 500;
     line-height: normal;
     text-transform: uppercase;
+    margin-left: 113px;
   }
 
   &__chat {
     display: inline-block;
     vertical-align: middle;
     border-radius: 50%;
-    border: 1px solid #000001;
-    width: 56px;
-    height: 56px;
+    border: 8px solid #000001;
+    width: 75px;
+    height: 75px;
     padding: 16px 16px 15px 16px;
     background-color: $color-default-black;
+    margin-top: 126px;
   }
 }
