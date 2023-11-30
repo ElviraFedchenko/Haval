@@ -1554,6 +1554,7 @@ button,
       flex-shrink: 0;
   margin: 0 auto;
   padding: 63px calc(50% - 600px - 10px) 461px calc(50% - 600px);
+  width: 100%;
 }
 .hero__inner {
   background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(38.72%, rgba(0, 0, 0, 0.5)), color-stop(61.63%, rgba(0, 0, 0, 0.5)), color-stop(100, rgba(0, 0, 0, 0)));
@@ -1650,7 +1651,7 @@ button,
   display: inline-block;
   vertical-align: middle;
   border-radius: 50%;
-  border: 8px solid #000001;
+  border: 8px solid #a1a1a1;
   width: 75px;
   height: 75px;
   padding: 16px 16px 15px 16px;
@@ -1663,12 +1664,14 @@ button,
   display: -ms-flexbox;
   display: flex;
   padding: 78px calc(50% - 600px - 10px) 19px calc(50% - 600px);
+  gap: 31px;
 }
 .products__card {
   background-color: white;
 }
 .products__container-card {
   background-color: #f3f3f3;
+  padding: 40px;
 }
 .products__wrapper-toggle {
   display: -webkit-box;
@@ -1702,6 +1705,33 @@ button,
 .products__toggle-equipment {
   background-color: transparent;
   border: 1px solid #000000;
+  color: #000000;
+}
+
+.products-card__card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 28px 1fr;
+  grid-template-columns: 28px 1fr;
+  gap: 12px;
+  min-height: 100%;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: normal;
+}
+.products-card__card svg {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  padding: 6px;
+  background-color: #000000;
+}
+.products-card__list {
+  -webkit-columns: 2;
+     -moz-columns: 2;
+          columns: 2;
 }
 
 /* @mixin hover-focus {
