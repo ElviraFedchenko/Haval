@@ -1,0 +1,45 @@
+.products {
+  &__container {
+    display: flex;
+    padding: 78px calc(50% - 600px - 10px) 19px calc(50% - 600px);
+  }
+
+  &__card {
+    background-color: white;
+  }
+
+  &__container-card {
+    background-color: #f3f3f3;
+  }
+
+  &__wrapper-toggle {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    gap: 10px;
+  }
+
+  &__toggle {
+    width: 100%;
+    padding: 18px 134px;
+    align-items: center;
+    height: 60px;
+  }
+
+  &__toggle-price {
+    background-color: #00cabf;
+  }
+
+  &__toggle-credit {
+    background-color: $color-default-black;
+  }
+
+  &__toggle-equipment {
+    background-color: transparent;
+    border: 1px solid $color-default-black;
+  }
+}

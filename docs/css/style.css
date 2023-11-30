@@ -1658,6 +1658,52 @@ button,
   margin-top: 126px;
 }
 
+.products__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 78px calc(50% - 600px - 10px) 19px calc(50% - 600px);
+}
+.products__card {
+  background-color: white;
+}
+.products__container-card {
+  background-color: #f3f3f3;
+}
+.products__wrapper-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  gap: 10px;
+}
+.products__toggle {
+  width: 100%;
+  padding: 18px 134px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+}
+.products__toggle-price {
+  background-color: #00cabf;
+}
+.products__toggle-credit {
+  background-color: #000000;
+}
+.products__toggle-equipment {
+  background-color: transparent;
+  border: 1px solid #000000;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {

@@ -1,0 +1,25 @@
+.products-card {
+  &__card {
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    gap: 12px;
+    min-height: 100%;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: normal;
+
+    svg {
+      display: inline-block;
+      vertical-align: middle;
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      padding: 6px;
+      background-color: $color-default-black;
+    }
+  }
+
+  &__list {
+    columns: 2;
+  }
+}
