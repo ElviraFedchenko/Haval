@@ -1790,7 +1790,7 @@ button,
   border: 1px solid #000000;
   color: #000000;
 }
-.products__wrapper-title span {
+.products__wrapper-title {
   color: #00cabf;
   display: -ms-grid;
   display: grid;
