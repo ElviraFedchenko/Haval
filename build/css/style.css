@@ -1697,11 +1697,45 @@ button,
   padding: 6px;
   background-color: #000000;
 }
-.products__desc {
+.products__card p {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.products__card-button {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 28px 1fr;
+  grid-template-columns: 28px 1fr;
+  gap: 12px;
+  padding-top: 24px;
+}
+.products__card-button svg {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  background-color: #00cabf;
+  width: 28px;
+  height: 28px;
+  padding: 6px;
+}
+.products__card-button p {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.products__card-desc {
   font-size: 12px;
   font-style: normal;
   font-weight: 300;
   line-height: 14px;
+  padding-left: 24px;
 }
 .products__list {
   -webkit-columns: 2;
@@ -1720,10 +1754,7 @@ button,
   font-weight: 500;
   line-height: 30.6px;
   margin: 0;
-  padding: 24px 0 20px 24px;
-}
-.products__title p {
-  padding-left: 24px;
+  padding: 24px 0 0 24px;
 }
 .products__wrapper-toggle {
   display: -webkit-box;
@@ -1761,6 +1792,11 @@ button,
 }
 .products__wrapper-title span {
   color: #00cabf;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 260px 160px;
+  grid-template-columns: 260px 160px;
+  gap: 21px 24px;
 }
 .products__photo {
   background-image: url("../img/mask-group.png");

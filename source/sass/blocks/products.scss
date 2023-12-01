@@ -30,14 +30,41 @@
       padding: 6px;
       background-color: $color-default-black;
     }
+
+    p {
+      align-items: center;
+      display: flex;
+    }
   }
 
+  &__card-button {
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    gap: 12px;
+    padding-top: 24px;
 
-  &__desc {
+    svg {
+      display: inline-block;
+      vertical-align: middle;
+      border-radius: 50%;
+      background-color: #00cabf;
+      width: 28px;
+      height: 28px;
+      padding: 6px;
+    }
+
+    p {
+      align-items: center;
+      display: flex;
+    }
+  }
+
+  &__card-desc {
     font-size: 12px;
     font-style: normal;
     font-weight: 300;
     line-height: 14px;
+    padding-left: 24px;
   }
 
   &__list {
@@ -57,11 +84,7 @@
     font-weight: 500;
     line-height: 30.6px;
     margin: 0;
-    padding: 24px 0 20px 24px;
-
-    p {
-      padding-left: 24px;
-    }
+    padding: 24px 0 0 24px;
   }
 
   &__wrapper-toggle {
@@ -98,6 +121,9 @@
 
   &__wrapper-title span {
     color: #00cabf;
+    display: grid;
+    grid-template-columns: 260px 160px;
+    gap: 21px 24px;
   }
 
   &__photo {
