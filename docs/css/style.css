@@ -1667,6 +1667,9 @@ button,
   gap: 31px;
   width: 100%;
 }
+.products__cards {
+  background-color: #ffffff;
+}
 .products__card {
   display: -ms-grid;
   display: grid;
@@ -1678,7 +1681,6 @@ button,
   font-weight: 300;
   line-height: normal;
   padding-bottom: 20px;
-  background-color: #ffffff;
 }
 .products__card svg {
   display: inline-block;
@@ -1745,35 +1747,6 @@ button,
 }
 .products__wrapper-title span {
   color: #00cabf;
-}
-
-.products-card__card {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 28px 1fr;
-  grid-template-columns: 28px 1fr;
-  gap: 12px;
-  min-height: 100%;
-  font-size: 12px;
-  font-weight: 300;
-  line-height: normal;
-  padding-bottom: 20px;
-}
-.products-card__card svg {
-  display: inline-block;
-  vertical-align: middle;
-  border-radius: 50%;
-  width: 28px;
-  height: 28px;
-  padding: 6px;
-  background-color: #000000;
-}
-.products-card__list {
-  -webkit-columns: 2;
-     -moz-columns: 2;
-          columns: 2;
-  gap: 55px;
-  padding-top: 90px;
 }
 
 /* @mixin hover-focus {
