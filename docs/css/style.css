@@ -1463,6 +1463,8 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 0 14px 0 15px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1492,6 +1494,8 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1598,6 +1602,7 @@ button,
       flex-shrink: 0;
   background-color: #00cabf;
   color: #ffffff;
+  margin-bottom: 20px;
 }
 .hero__image img {
   width: 100%;
@@ -1660,9 +1665,10 @@ button,
 }
 
 .products__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 560px 560px;
+  grid-template-columns: 560px 560px;
   padding: 78px calc(50% - 600px - 10px) 19px calc(50% - 600px);
   gap: 31px;
   width: 100%;
@@ -1691,6 +1697,12 @@ button,
   padding: 6px;
   background-color: #000000;
 }
+.products__desc {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 14px;
+}
 .products__list {
   -webkit-columns: 2;
      -moz-columns: 2;
@@ -1701,7 +1713,6 @@ button,
 .products__container-card {
   background-color: #f3f3f3;
   padding: 40px;
-  width: 50%;
 }
 .products__title {
   font-size: 22px;
@@ -1709,7 +1720,10 @@ button,
   font-weight: 500;
   line-height: 30.6px;
   margin: 0;
-  padding: 24px 292px 20px 24px;
+  padding: 24px 0 20px 24px;
+}
+.products__title p {
+  padding-left: 24px;
 }
 .products__wrapper-toggle {
   display: -webkit-box;
@@ -1747,6 +1761,10 @@ button,
 }
 .products__wrapper-title span {
   color: #00cabf;
+}
+.products__photo {
+  background-image: url("../img/mask-group.png");
+  background-repeat: no-repeat;
 }
 
 /* @mixin hover-focus {
