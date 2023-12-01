@@ -1,5 +1,5 @@
 // Swiper 8.4.7
-// import './vendor/swiper';
+import './vendor/swiper';
 import './vendor/focus-visible-polyfill';
 
 const productsSwiper = document.querySelector('.products__slider');
@@ -18,6 +18,7 @@ const initProductsSwiper = () => {
       grabCursor: false,
       watchOverflow: true,
       loop: false,
+      keyboard: true,
       speed: 600,
       breakpoints: {
         1199: {

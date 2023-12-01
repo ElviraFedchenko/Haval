@@ -3,15 +3,50 @@
     display: flex;
     padding: 78px calc(50% - 600px - 10px) 19px calc(50% - 600px);
     gap: 31px;
+    width: 100%;
   }
 
   &__card {
-    background-color: white;
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    gap: 12px;
+    min-height: 100%;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: normal;
+    padding-bottom: 20px;
+    background-color: $color-default-white;
+
+    svg {
+      display: inline-block;
+      vertical-align: middle;
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      padding: 6px;
+      background-color: $color-default-black;
+    }
+  }
+
+  &__list {
+    columns: 2;
+    gap: 55px;
+    padding-top: 90px;
   }
 
   &__container-card {
     background-color: #f3f3f3;
     padding: 40px;
+    width: 50%;
+  }
+
+  &__title {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30.6px;
+    margin: 0;
+    padding: 24px 292px 20px 24px;
   }
 
   &__wrapper-toggle {
@@ -27,9 +62,9 @@
 
   &__toggle {
     width: 100%;
-    padding: 18px 134px;
+    padding: 18px 30px;
     align-items: center;
-    height: 60px;
+    min-height: 60px;
   }
 
   &__toggle-price {
@@ -44,5 +79,9 @@
     background-color: transparent;
     border: 1px solid $color-default-black;
     color: $color-default-black;
+  }
+
+  &__wrapper-title span {
+    color: #00cabf;
   }
 }
