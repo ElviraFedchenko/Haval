@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-import {initProductsSwiper} from './vendor';
+import {initProductsSwiper, initProductsSwiper2} from './vendor';
 
 // ---------------------------------
 
@@ -12,6 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   iosVhFix();
   initProductsSwiper();
+  initProductsSwiper2();
 
   // Modules
   // ---------------------------------
