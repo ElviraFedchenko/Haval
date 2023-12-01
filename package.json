@@ -2,7 +2,7 @@
   "name": "haval",
   "version": "2.0.0",
   "type": "module",
-  "description": "Тестовое задание",
+  "description": "Стартовый шаблон сборки Лиги А",
   "browserslist": [
     "last 3 versions",
     "IE 11",
